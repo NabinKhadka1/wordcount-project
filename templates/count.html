@@ -1,0 +1,15 @@
+<h1>Total words counted : {{ noofwords }} words</h1> 
+
+<a href="{% url 'home-page' %}">Go back to counting</a>
+
+<h1>Your words are:</h1>
+{{ totalcount }}
+
+<br>
+<br>
+<h1>Words counted</h1> 
+ {% for wordlist,countlist in repeatedwordcount %}
+        <h1>{{ wordlist}}--{{ countlist }}</h1>
+ {% endfor %}
+
+ 
